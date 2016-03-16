@@ -12,6 +12,9 @@ $naranja: #E67E22;
 .mg-0{
 	margin: 0px;
 }
+.pd-0{
+	padding: 0px;
+}
 .navbar-kane{
 	background-color: $verde;
 	border-bottom: 1px solid #000;
@@ -56,6 +59,16 @@ $naranja: #E67E22;
 		}
 	}
 }
+@media screen and (max-width: 767px) {
+	.navbar-kane {
+		.navbar-nav{
+			li{
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
 a{
 	text-decoration: none;
 	color: #000;
@@ -71,6 +84,7 @@ ul{
 	height: 2px;
 	margin: 0px auto;
 	margin-bottom: 35px;
+	background-color: #443E44;
 	&.bg-white{
 		background-color: $white;
 	}
@@ -115,8 +129,12 @@ section:first-child{
 	}
 }
 .pick-your-color{
+	padding-bottom: 30px;
 	h1{
 		color: #443E44;
+	}
+	.separador{
+		margin-bottom: 50px;
 	}
 }
 .about-us{
@@ -385,7 +403,7 @@ input.botones{
 			padding: 20px 0px 20px 14px;
 		}
 		input.botones{
-			width: 10%;
+			width: 150px;
 			display: block;
 			padding: 15px 20px;
 			margin-top: 20px;
@@ -473,6 +491,93 @@ footer{
 }
 
 
+/*PALETA*/
+@mixin boxcolor($color){
+	background-color: $color;
+	height: 135px;
+}
+.fullcolor-box{
+	color: #443E44;
+	.row{
+		padding-bottom: 14px;
+	}
+    .box1 {
+        @include boxcolor(#69D2E7);
+    }
+    .box2 {
+        @include boxcolor(#A7DBDB);
+    }
+    .box3 {
+        @include boxcolor(#E0E4CC);
+    }
+    .box4 {
+        @include boxcolor(#F38630);
+    }
+    .box5 {
+        @include boxcolor(#FA6900);
+    }
+    .box6 {
+        @include boxcolor(#E94C6F);
+    }
+    .box7 {
+    	color: $white;
+        @include boxcolor(#542733);
+    }
+    .box8 {
+        @include boxcolor(#5A6A62);
+    }
+    .box9 {
+        @include boxcolor(#C6D5CD);
+    }
+    .box10 {
+        @include boxcolor(#FDF200);
+    }
+    .box11 {
+        @include boxcolor(#DB3340);
+    }
+    .box12 {
+        @include boxcolor(#E8B71A);
+    }
+    .box13 {
+        @include boxcolor(#F7EAC8);
+    }
+    .box14 {
+        @include boxcolor(#1FDA9A);
+    }
+    .box15 {
+        @include boxcolor(#28ABE3);
+    }
+    .box16 {
+        @include boxcolor(#588C73);
+    }
+    .box17 {
+        @include boxcolor(#F2E394);
+    }
+    .box18 {
+        @include boxcolor(#F2AE72);
+    }
+    .box19 {
+        @include boxcolor(#D96459);
+    }
+    .box20 {
+        @include boxcolor(#8C4646);
+    }
+    .box21 {
+        @include boxcolor(#D0C91F);
+    }
+    .box22 {
+        @include boxcolor(#85C4B9);
+    }
+    .box23 {
+        @include boxcolor(#008BBA);
+    }
+    .box24 {
+        @include boxcolor(#DF514C);
+    }
+    .box25 {
+        @include boxcolor(#DC403B);
+    }
+}
 /*SCROLL*/
 
 ::-webkit-scrollbar{
